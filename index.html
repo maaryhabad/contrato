@@ -22,7 +22,7 @@
                 -webkit-print-color-adjust: exact !important;
             }
             p {
-                font-size: 1vw;
+                font-size: 12px;
                 color: #58595B;
             }
             .bold {
@@ -35,20 +35,19 @@
                 color: #F89420;
             }
             .font12 {
-                font-size: 0.8vw;
+                font-size: 10px;
             }
             .font24 {
-                font-size: 1.2vw;
+                font-size: 14px;
             }
             .font32 {
-                font-size: 1.4vw;
+                font-size: 16px;
             }
             .font48 {
-                font-size: 2.4vw;
+                font-size: 20px;
             }
             .banner {
-                height: 55vh;
-                display: flex;
+                height: auto;
                 margin-top: 2%;
             }
             .bannerText {
@@ -95,16 +94,6 @@
                 width: 80vw;
                 text-align: center;
             }
-            .index {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-            .index img {
-                width: 80%;
-                height: auto;
-            }
             .contrato {
                 width: 100%;
                 margin-top: 3%;
@@ -112,7 +101,7 @@
                 display: flex;
             }
             .left {
-                padding-left: 10%;
+                padding-left: 5%;
                 width: 20%;
                 height: auto;
             }
@@ -139,15 +128,11 @@
             }
 
             .titles {
-                padding-left: 3%;
                 width: 95%;
             }
             .titles img {
                 width: 80%;
                 margin-bottom: 2%;
-            }
-            .numbers {
-                width: 3%;
             }
             li {
                 font-size: 1vw;
@@ -157,17 +142,10 @@
             .form_curso {
                 width: 100%;
                 height: auto;
-                display: flex;
-                flex-direction: column;
             }
             .input-curso {
                 width: 100%;
                 height: auto;
-            }
-            .row {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
             }
             .row div {
                 margin-right: 15px;
@@ -189,6 +167,7 @@
             }
             table {
                 border-collapse: collapse;
+                margin-top: 3%;
             }
             table tr {
                 border-bottom: 1px solid #E6E7E6;
@@ -197,11 +176,11 @@
                 border-color: #F89420;
             }
             table tr th {
-                font-size: 0.8vw;
+                font-size: 10px;
                 color: #58595B;
             }
             table tr td {
-                font-size: 0.8vw;
+                font-size: 10px;
                 color: #58595B;
                 padding: 15px 15px 15px 0;
             }
@@ -217,10 +196,6 @@
                 border: 1px solid black;
                 border-radius: 10px;
             }
-            .parte_titulo {
-                display: inline-flex;
-                width: 100%;
-            }
             .parte_titulo img {
                 width: 5%;
             }
@@ -229,43 +204,23 @@
                 width: 100%;
             }
 
-
         </style>
     </head>
     <body>
-        <div id="pdf">
-            <section class="banner">
-                <div class="bannerText">
-                    <p><span class="font32">Contrato</span><br>
-                    <span class="bold orange font48">Prestação<br>
-                    de Serviços</span><br><br><br>
-                
-                    <span class="bold orange" style="font-size: 1.8vw;">Olá!</span><br>
-                    <span class="font32">Somos a Anhanguera Educacional!</span><br><br>
-                
-                    Já transformamos a vida de <span class="bold">mais de um milhão de pessoas</span> em 20 anos de compromisso com a educação.<br><br>
-                
-                    Oferecemos conveniência e conteúdo compatível com o mercado de trabalho em cursos de graduação, pós-graduação, extensão e Pronatec, contribuindo com o projeto de vida de crecimento e ascensão profissional dos nossos estudantes.<br><br>
-                    
-                    <span class="bold orange">A gente acredita que você pode ser quem quiser!</span><br><br>
-                    Que tal fazer parte da nossa história e nos deixar fazer parte da sua?<br>
-                    <span class="bold">Vamos juntos nessa caminhada para o conhecimento.</span></p>
-                </div>
-                <div class="bannerImage">
-                    <img src="img/ilustração.svg" alt="Ilustração de um homem jovem sentado com camisa laranja e calça cinza clara usando fones de ouvido e olhando o celular enquanto sorri. Atrás, a imagem ampliada da tela do celular onde se vê o site da Anhanguera com um gráfico ascendente e algumas informações ilegíveis.">
-                    <button class="font32 bold button">QUERO SABER MAIS</button>
-                </div>
+        <div>
+            <section class="trail">
+                <img src="img/boas vindas.svg" alt="Um texto ao lado esquerdo que diz: Contrato Prestação de Serviços. Olá! Somos a Anhanguera Educacional! Já transformamos a vida de mais de um milhão de pessoas em 20 anos de compromisso com a educação. Oferecemos conveniência e conteúdo compatível com o mercado de trabalho em cursos de graduação, pós-graduação, extensão e Pronatec, contribuindo com o projeto de vida de crescimento e ascensão profissional dos nossos estudantes. A gente acredita que você pode ser quem quiser! Que tal fazer parte da nossa história e nos deixar fazer parte da sua? Vamos juntos nessa caminhada para o conhecimento. Ao lado direito, uma ilustração de um homem jovem usando fones de ouvido e olhando o celular, e ao lado dele a tela do celular em destaque, como se fosse a página inicial do site da Anhanguera.">
             </section>
             <section class="trail">
                 <p class="bold font32">Siga a trilha do <span class="yellow">sucesso profissional</span><br></p>
                 <img src="img/jornada.svg" alt="Um infográfico que mostra as etapas do processo educacional. Na primeira etapa,  o título Vestibular seguido do texto: &#39;Você escolhe o curso e se inscreve no vestibular&#39;. Na segunda, o título Matrícula seguido do texto: &#39;Faz a matrícula e realiza o pagamento da primeira mensalidade&#39;. Na terceira etapa, o título Portal do Aluno seguido do texto: &#39;Acessa o portal, preenche seus dados e assina o contrato&#39;. Na quarta etapa, o título Estudos seguido do texto: &#39;Assiste as aulas e realiza as atividades do curso&#39;. Na quinta etapa, o título Formatura seguido do texto: &#39;Tudo certo com seus documentos? É hora da formatura!&#39;. Na última etapa, o título Sucesso profissional seguido do texto: &#39;Agora é só partir para o mercado de trabalho&#39;">
             </section>
-            <section class="index">
+            <section class="trail">
                 <img src="img/indice.svg" alt="À esquerda, o título: O que você vai encontrar nesse contrato, seguido de 5 quadrados com informações distintas. Nos quadrados, lê-se respectivamente: 1. Informações gerais, 2. Temas financeiros, 3. Vigência e extinção, 4. Sua imagem e dados pessoas e 5. Questões Gerais.">
             </section>
             <section class="contrato">
                 <div class="left">
-                    <p class="bold yellow" style="font-size:1.8vw; margin-bottom: 0;">1.<br><span class="font32 yellow" style="font-weight: 400;">Informações Gerais:<br>do contrato, das partes e dos cursos</span></p>
+                    <p class="bold yellow" style="font-size:1.8vw; margin-bottom: 0;">1.<br><span class="font32 yellow" style="font-weight: 400;">Informações Gerais: do contrato, das partes e dos cursos</span></p>
                     
                 </div>
                 <div class="right">
@@ -273,11 +228,8 @@
                     <p class="bold line">Quadro resumo das partes<br></p>
                     <p>Partes são os envolvidos em um contrato. As partes abaixo descritas firmam o <span class="bold">Contrato de Prestação de Serviços Educacionais</span>, com base no Estatuto e Regimento da <span class="bold">Instituição de Ensino Superior</span>, nas disposições do Código de Defesa do Consumidor, Lei 9.870/99 e nas Cláusulas a seguir:<br><br></p>
                     <div class="parte">
-                        <div class="parte_titulo">
-                            <img src="img/anhanguera.svg" alt="Ícone de um prédio">
-                            <p class="bold">Anhanguera Educacional Participações S.A</p>
-                        </div>
                         <p>
+                            <span class="bold">Anhanguera Educacional Participações S.A</span><br><br>
                             CNPJ/ME: 04.310.392/0001-46<br>
                             Endereço: Alameda Maria Tereza, 4266 - Bairro Dois Córregos - Valinhos/SP<br>
                             Definida nesse contrato como: <span class="bold">Instituição de Ensino Superior</span> ou <span class="bold">IES</span>
@@ -285,11 +237,8 @@
                     </div>
                     <br>
                     <div class="parte">
-                        <div class="parte_titulo">
-                            <img src="img/icone_estudante.svg" alt="Ícone de 3 alunos sentados em suas carteiras">
-                            <p><span class="bold">Estudante</span></p>
-                        </div>
                         <p>
+                            <span class="bold">Estudante</span><br><br>
                             Identificado e qualificado no quadro abaixo, ou seu representante legal (pai, mãe ou responsável quando menor de 18 anos).<br>
                             Definido nesse contrato como: <span class="bold">Estudante</span> ou <span class="bold">Você</span>
                         </p>
@@ -309,14 +258,16 @@
                             <div>
                                 <p class="font12" style="margin-bottom: 0.5em;">Período</p>
                                 <p class="info font12">#PERIODO#</p>
-                            </div>
-                            <div>
                                 <p class="font12" style="margin-bottom: 0.5em;">Registro Acadêmico</p>
                                 <p class="info font12">#CODNOVO#</p>
-                            </div>
-                            <div>
                                 <p class="font12" style="margin-bottom: 0.5em;">Turma</p>
                                 <p class="info font12">#TURMA#</p>
+                            </div>
+                            <div>
+                                
+                            </div>
+                            <div>
+                                
                             </div>
                             <div>
                                 <p class="font12" style="margin-bottom: 0.5em;">Termo</p>
@@ -347,11 +298,11 @@
                         </div>
                         <div class="input-curso">
                             <p class="font12" style="margin-bottom: 0.5em;">Mantida</p>
-                            <p class="info font12">#MANTIDA#</p
+                            <p class="info font12">#MANTIDA#</p>
                         </div>
                         <div class="input-curso">
                             <p class="font12" style="margin-bottom: 0.5em;">Endereço da mantida</p>
-                            <p class="info font12">#ENDERECOMANTIDA#</p
+                            <p class="info font12">#ENDERECOMANTIDA#</p>
                         </div>
                         <div class="input-curso row">
                             <div>
@@ -378,7 +329,7 @@
                     <div class="form_curso">
                         <div class="input-curso">
                             <p class="font12" style="margin-bottom: 0.5em;">Nome completo</p>
-                            <p class="info font12">#NOME#</p
+                            <p class="info font12">#NOME#</p>
                         </div>
                         <div class="input-curso row">
                             <div>
@@ -434,7 +385,7 @@
                         </div>
                         <div class="input-curso">
                             <p class="font12" style="margin-bottom: 0.5em;">Endereço</p>
-                            <p class="info font12">#ENDERECO#</p
+                            <p class="info font12">#ENDERECO#</p>
                         </div>
                         <div class="input-curso row">
                             <div>
@@ -594,22 +545,16 @@
     
                     <!--1.3 Normas Gerais-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.3</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Normas Gerais</p>
+                            <p class="bold">1.3 &nbsp;&nbsp; Normas Gerais</p>
                             <p>A IES prestará os serviços educacionais de acordo com as Normas Gerais disponíveis no endereço eletrônico ou no canal de atendimento ao aluno da instituição de ensino.</p>
                         </div>
                     </div>
     
                     <!--1.4 Local da Prestação dos Serviços-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.4</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Local da Prestação dos Serviços</p>
+                            <p class="bold">1.4 &nbsp;&nbsp; Local da Prestação dos Serviços</p>
                             <p>As aulas acontecerão em salas de aula, ambientes virtuais ou locais que a IES indicar, de acordo com a natureza do conteúdo e da técnica pedagógica adotada, nas seguintes modalidades:</p>
                             <img src="img/locais.svg" alt="No primeiro quadro lê-se: Presencial. Você poderá realizar aulas práticas em endereço diverso do qual assiste aulas e realiza provas. No segundo quadro lê-se: A distância | EAD. Você poderá ter aulas Sammy presenciais e/ou a distância (remotas e/ou 100% on-line), nos termos da legislação federal aplicável.">
                         </div>
@@ -617,32 +562,21 @@
     
                     <!-- Aviso Corona-->
                     <div class="terms">
-                        <div class="numbers">
-                            <img src="img/icone-virus.svg" alt="ícone de um vírus" style="width: 100%; padding-top: 35%;">
-                        </div>
-                        <div class="titles">
-                            <p>Em razão da Pandemia de Covid-19 e outras circunstâncias excepcionais que possam ocorrer, conforme autorizado por autoridades regulatórias e recomendado por autoridades sanitárias públicas e/ou pela IES, e seguindo diretrizes dos Poderes Públicos Federal, Estadual e Municipal, a IES, mesmo em cursos presenciais, se reserva no direito de ministrar, integral ou parcialmente durante o semestre/ano letivo, aulas/atividades na modalidade a distância (remotas e/ou 100% online) através do uso de plataformas próprias e/ou disponíveis no mercado, que substituirão as aulas/atividades presenciais do curso, mantendo-se o mesmo valor da semestralidade/mensalidade escolar prevista neste Contrato.</p>
-                        </div>
+                        <img src="img/aviso-virus.svg" alt="Em razão da pandemia de Covid-19 e outras circunstâncias excepcionais que possam ocorrer, conforme autorizado por autoridades regulatórias e recomendado por autoridades sanitárias públicas e/ou pela IES, e seguindo diretrizes dos Poderes Públicos Federal, Estadual e Municipal, a IES, mesmo em cursos presenciais, se reserva no direito de ministrar, integral ou parcialmente durante o semestre/ano letivo, aulas/atividades na modalidade a distância (remotas e/ou 100% online) através do uso de plataformas próprias e/ou disponíveis no mercado, que substituirão as aulas/atividades presenciais do curso, mantendo-se o mesmo valor da semestralidade/mensalidade escolar prevista neste Contrato." style="margin-top: 2%; margin-bottom: 2%; width: 90%;">
                     </div>
     
                     <!--1.5 Migração-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.5</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Migração</p>
+                            <p class="bold">1.5 &nbsp;&nbsp; Migração</p>
                             <p>A IES poderá migrar o serviço educacional prestado ao ESTUDANTE de modalidade de ensino presencial para modalidade de ensino a distância, conforme legislação aplicável.</p>
                         </div>
                     </div>
     
                     <!--1.6 Transferência-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.6</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Transferência</p>
+                            <p class="bold">1.6 &nbsp;&nbsp; Transferência</p>
                             <p>O ESTUDANTE está ciente e concorda quanto à possibilidade da IES realizar a transferência de seu Curso para Instituição de Ensino diversa e integrante do mesmo grupo econômico da Anhanguera, condorme definido pela legislação aplicável. Havendo essa hipótese, caso aplicável ao ESTUDANTE, eventuais valores decorrentes de mensalidades escolares efetivamente pago à Anhanguera, bolsas e/ou descontos concedidos, serão mantidos e considerados válidos pela IES transferida. Quaisquer certificados e/ou diploma de graduação serão emitidos pela IES transferida.</p>
                         </div>
                     </div>
@@ -653,46 +587,31 @@
     
                     <!--WEB-->
                     <div class="terms">
-                        <div class="numbers">
-                            <img src="img/web.svg" alt="ícone de um computador" style="width: 100%; padding-top: 35%;">
-                        </div>
                         <div class="titles">
-                            <p class="bold">Web</p>
-                            <p>O ESTUDANTE, ao formalizar o Contrato via aceite eletrônico na web, em plataforma disponibilizada pela IES, confirma e aceita todos e quaisquer termos e condições dos contratos de prestação de serviços dos semestres anteriores referentes ao Curso, independentemente de tais contratos terem sido assinados ou confirmados via aceite eletrônico na web ou telefone.<br><br>
-                            A matrícula do ESTUDANTE será efetivada após a compensação do pagamento da primeira mensalidade do semestre letivo.</p>
+                            <img src="img/web.svg" alt="ícone de um computador" style="width: 100%;">
                             <img src="img/atenção.svg" alt="Atenção: se existirem débitos relativos ao pagamento de mensalidades escolares referentes ao(s) semestre(s) letivo(s) anterior(es), a IES poderá recusar a renovação da matrícula do estudante para o segundo mestre seguinte, incluindo se nova matrícula ou renovação de matrícula para qualquer instituição de ensino do mesmo grupo econômico da IES, nos termos da Lei nº 9.870/99. A IES poderá ainda condicionar a nova matrícula ou a sua renovação à negociação prévia do débito anterior." style="margin-left: 5%;">
                         </div>
                     </div>
     
                     <!--GRAVAÇÃO TELEFÔNICA-->
                     <div class="terms">
-                        <div class="numbers">
-                            <img src="img/telefone.svg" alt="ícone de telefone" style="width: 100%; padding-top: 35%;">
-                        </div>
                         <div class="titles">
-                            <p class="bold">Gravação Telefônica</p>
-                            <p>Em todos os procedimentos realizados via telefone (call center), fica autorizada a gravação integral do atendimento, conforme o decreto n. 6.523, de 31 de julho de 2009, bem como sua utilização e divulgação do áudio para quaisquer finalidades legalmente permitidas.</p>
+                            <img src="img/telefone.svg" alt="Em todos os procedimentos realizados via telefone (call center), fica autorizada a gravação integral do atendimento, conforme o decreto n. 6.523, de 31 de julho de 2009, bem como sua utilização e divulgação do áudio para quaisquer finalidades legalmente permitidas." style="width: 100%;">
                         </div>
                     </div>
     
                     <!--1.1 Renovação de matrícula-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.1</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Renovação de matrícula</p>
+                            <p class="bold">1.1 &nbsp;&nbsp; Renovação de matrícula</p>
                             <p>Para serviços de renovação de matrícula, transferência de modalidade de estudo, transferência de curso, transferência de aula, transferência de unidade e trancamento de matrícula, o ESTUDANTE poderá solicitá-los pessoalmente, via web (plataforma da IES) ou call center, ou por outro meio que a IES disponibilizar.</p>
                         </div>
                     </div>
     
                     <!--1.2 Renovação de bolsa-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.1</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Renovação de bolsa</p>
+                            <p class="bold">1.2 &nbsp;&nbsp; Renovação de bolsa</p>
                             <p>A bolsa de estudos parcial ou integral concedida pela IES ao ESTUDANTE terá vigência a partir da data de sua concessão, sendo que a renovação da matrícula para o semestre subsequente não representará a manutenção automática da bolsa de estudos.</p>
                         </div>
                     </div>
@@ -703,11 +622,8 @@
     
                     <!--1.1 Turma presencial-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.1</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Turma presencial</p>
+                            <p class="bold">1.1 &nbsp;&nbsp; Turma presencial</p>
                             <p>A IES pode não iniciar o Curso, caso as matrículas não atinjam o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas. Nesta hipótese, o ESTUDANTE receberá o valor total pago pela inscrição no vestibular e pagamento da primeira mensalidade (matrícula).<br><br>
     
                             Cursos podem ser descontinuados, caso o número de rematrículas não atinja o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas em determinado período letivo e turno. Caso esta hipótese ocorra, na medida da conclusão das disciplinas comuns em curso diferente do pretendido, será facultado ao ESTUDANTE a migração para outro curso oferecido pela IES, aproveitando academicamente as disciplinas cursadas, conforme compatibilidade de grade curricular.</p>
@@ -716,11 +632,8 @@
     
                     <!--1.2 Curso a distância-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.2</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Curso a distância</p>
+                            <p class="bold">1.2 &nbsp;&nbsp; Curso a distância</p>
                             <p>Caso o curso escolhido na modalidade a distância pelo ESTUDANTE não atinja o número mínimo para formação de turma, este poderá iniciar seus estudos em turma de outro curso correlato, na modalidade à distância (semipresencial), sem prejuízo do programa pedagógico do seu Curso, estando ciente e de pleno de acordo que, após concluídas as disciplinas comuns em curso distinto do pretendido, ocorrerá a migração automática para o curso inicial escolhido, sendo mantida, se houver, eventuais bolsas e descontos.<br><br>
     
                             Se o número mínimo para formação de turma não for alcançado, o ESTUDANTE poderá optar entre: 
@@ -734,11 +647,8 @@
     
                     <!--1.2 Portal de serviços do aluno-->
                     <div class="terms">
-                        <div class="numbers">
-                            <p class="bold">1.2</p>
-                        </div>
                         <div class="titles">
-                            <p class="bold">Portal de serviços do aluno</p>
+                            <p class="bold">1.3 &nbsp;&nbsp; Portal de serviços do aluno</p>
     
                             <p class="bold">Uso da senha</p>
                             <p>As senhas de acesso a sistemas da IES são de uso pessoal e não podem ser compartilhadas. Caso aconteçam danos, por acesso de pessoas não autorizadas, a IES não poderá ser responsabilizada.<br><br></p>
@@ -757,21 +667,5 @@
                 </div>
             </section>
         </div>
-        <button onclick="generatePDF()">Save PDF</button>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-        <script>
-            import { jsPDF } from "jsPDF"
-
-            function generatePDF()  {
-                const doc = new jsPDF({ unit: 'pt'})
-                const pdfElement= document.getElementById('pdf')
-
-                doc.html(pdfElement, {
-                    callback: (pdf) => {
-                        pdf.save('MeuPDF.pdf')
-                    }
-                })
-            }
-        </script>
     </body>
 </html>
