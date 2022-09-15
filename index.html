@@ -35,7 +35,7 @@
                 color: #F89420;
             }
             .font12 {
-                font-size: 10px;
+                font-size: 12px;
             }
             .font24 {
                 font-size: 14px;
@@ -96,20 +96,18 @@
             }
             .contrato {
                 width: 100%;
-                margin-top: 3%;
                 height: auto;
-                display: flex;
             }
             .left {
                 padding-left: 5%;
-                width: 20%;
+                width: 30%;
                 height: auto;
             }
             .right {
-                width: 80%;
+                width: auto;
                 height: auto;
                 padding-right: 10%;
-                padding-left: 5%;
+                padding-left: 20%;
             }
             .right img {
                 width: 70%;
@@ -146,12 +144,10 @@
             .input-curso {
                 width: 100%;
                 height: auto;
-            }
-            .row div {
                 margin-right: 15px;
             }
             .info {
-                border: 0.5px solid #9E9B95;
+                border: 1px solid #9E9B95;
                 border-radius: 3px;
                 padding: 3px 6px;
                 color: #9E9B95;
@@ -219,450 +215,509 @@
                 <img src="img/indice.svg" alt="À esquerda, o título: O que você vai encontrar nesse contrato, seguido de 5 quadrados com informações distintas. Nos quadrados, lê-se respectivamente: 1. Informações gerais, 2. Temas financeiros, 3. Vigência e extinção, 4. Sua imagem e dados pessoas e 5. Questões Gerais.">
             </section>
             <section class="contrato">
-                <div class="left">
-                    <p class="bold yellow" style="font-size:1.8vw; margin-bottom: 0;">1.<br><span class="font32 yellow" style="font-weight: 400;">Informações Gerais: do contrato, das partes e dos cursos</span></p>
-                    
-                </div>
-                <div class="right">
-                    <br><br>
-                    <p class="bold line">Quadro resumo das partes<br></p>
-                    <p>Partes são os envolvidos em um contrato. As partes abaixo descritas firmam o <span class="bold">Contrato de Prestação de Serviços Educacionais</span>, com base no Estatuto e Regimento da <span class="bold">Instituição de Ensino Superior</span>, nas disposições do Código de Defesa do Consumidor, Lei 9.870/99 e nas Cláusulas a seguir:<br><br></p>
-                    <div class="parte">
-                        <p>
-                            <span class="bold">Anhanguera Educacional Participações S.A</span><br><br>
-                            CNPJ/ME: 04.310.392/0001-46<br>
-                            Endereço: Alameda Maria Tereza, 4266 - Bairro Dois Córregos - Valinhos/SP<br>
-                            Definida nesse contrato como: <span class="bold">Instituição de Ensino Superior</span> ou <span class="bold">IES</span>
-                        </p>
+                <!--Informações gerais-->
+                <div>
+                    <div class="left">
+                        <p class="bold yellow font48">1. <span class="font32 yellow" style="font-weight: 400;">Informações gerais</span></p> 
                     </div>
-                    <br>
-                    <div class="parte">
-                        <p>
-                            <span class="bold">Estudante</span><br><br>
-                            Identificado e qualificado no quadro abaixo, ou seu representante legal (pai, mãe ou responsável quando menor de 18 anos).<br>
-                            Definido nesse contrato como: <span class="bold">Estudante</span> ou <span class="bold">Você</span>
-                        </p>
-                    </div>
-                    <br>
-                    <p class="bold line">Preencha o formulário abaixo com seus dados:<br></p>
-                    
-                    <!--CURSO-->
-                    <p class="yellow">CURSO</p>
-    
-                    <div class="form_curso">
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Curso</p>
-                            <p class="info font12">#CURSO#</p>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Período</p>
-                                <p class="info font12">#PERIODO#</p>
-                                <p class="font12" style="margin-bottom: 0.5em;">Registro Acadêmico</p>
-                                <p class="info font12">#CODNOVO#</p>
-                                <p class="font12" style="margin-bottom: 0.5em;">Turma</p>
-                                <p class="info font12">#TURMA#</p>
-                            </div>
-                            <div>
-                                
-                            </div>
-                            <div>
-                                
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Termo</p>
-                                <p class="info font12">#TERMO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Regime</p>
-                                <p class="info font12">#REGIME#</p>
-                            </div>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Forma de Ingresso</p>
-                                <p class="info font12">#FORMAINGRESSO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Modalidade</p>
-                                <p class="info font12">#MODALIDADE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Data de Ingresso</p>
-                                <p class="info font12">#DATAINGR#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Vigência</p>
-                                <p class="info font12">#SEMESTRAL#</p>
-                            </div>
-                        </div>
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Mantida</p>
-                            <p class="info font12">#MANTIDA#</p>
-                        </div>
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Endereço da mantida</p>
-                            <p class="info font12">#ENDERECOMANTIDA#</p>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Bairro</p>
-                                <p class="info font12">#BAIRRO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Cidade</p>
-                                <p class="info font12">#CIDADE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">UF</p>
-                                <p class="info font12">#UF#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">CEP</p>
-                                <p class="info font12">#CEP#</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!--ESTUDANTE-->
-                    <p class="yellow">ESTUDANTE</p>
-                    <div class="form_curso">
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Nome completo</p>
-                            <p class="info font12">#NOME#</p>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">RG</p>
-                                <p class="info font12">#RG#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Órg. exp</p>
-                                <p class="info font12">#EXPRG#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">UF</p>
-                                <p class="info font12">#UFRG#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">CPF</p>
-                                <p class="info font12">#CPF#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Sexo</p>
-                                <p class="info font12">#SEXO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Telefone</p>
-                                <p class="info font12">#FONE#</p>
-                            </div>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Estado civil</p>
-                                <p class="info font12">#ESTADO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Data de nasc.</p>
-                                <p class="info font12">#DATAN#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Idade</p>
-                                <p class="info font12">#IDADE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Naturalidade</p>
-                                <p class="info font12">#NATURALIDADE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">UF</p>
-                                <p class="info font12">#UF#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Nacionalidade</p>
-                                <p class="info font12">#NACIONALIDADE#</p>
-                            </div>
-                        </div>
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Endereço</p>
-                            <p class="info font12">#ENDERECO#</p>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Bairro</p>
-                                <p class="info font12">#BAIRRO#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Cidade</p>
-                                <p class="info font12">#CIDADE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">UF</p>
-                                <p class="info font12">#UE#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">CEP</p>
-                                <p class="info font12">#CEP#</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!--ESTUDANTE BENEFICIÁRIO | MENOR DE 18 ANOS-->
-                    <p class="yellow">ESTUDANTE BENEFICIÁRIO | MENOR DE 18 ANOS</p>
-                    <div class="form_curso">
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Nome do pai</p>
-                            <p class="info font12">#PAI#</p>
-                        </div>
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Nome da mãe</p>
-                            <p class="info font12">#MAE#</p>
-                        </div>
-                        <div class="input-curso">
-                            <p class="font12" style="margin-bottom: 0.5em;">Nome do responsável</p>
-                            <p class="info font12">#RESP#</p>
-                        </div>
-                    </div>
-    
-                    <!--FINANCEIRO-->
-                    <p class="yellow">FINANCEIRO</p>
-                    <div class="form_curso">
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Valor do semestre</p>
-                                <p class="info font12">#VALOR#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">VALOR MENSAL</p>
-                                <p class="info font12">#VALORPARCELA#</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Vencimento da parcela</p>
-                                <p class="info font12">#5º DIA ÚTIL#</p>
-                            </div>
-                        </div>
-                        <p class="bold yellow font12" style="margin-top: 0;">
-                            VALORES COM BOLSA INCENTIVO E EVENTUAIS DESCONTOS
-                        </p>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa Integral</spam></p>
-                                <p class="info font12">@SEMEBOLSA</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa 1º semestre</spam></p>
-                                <p class="info font12">@SemeBolsa1ºSem</p>
-                            </div>
-                        </div>
-                        <div class="input-curso row">
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa Integral</spam></p>
-                                <p class="info font12">@mensalbolsa</p>
-                            </div>
-                            <div>
-                                <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa 1º semestre</spam></p>
-                                <p class="info font12">@mensalbolsa1ºsem</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <p class="semestre">SEMESTRE ATUAL: XX PERÍODO</p>
-    
-                    <!--TABELA-->
-                    <table>
-                        <tr>
-                          <th class="tab_titulo" style="text-align: left;">DESCRIÇÃO</th>
-                          <th class="tab_titulo">MÊS | ANO</th>
-                          <th class="tab_titulo">MÊS | ANO</th>
-                          <th class="tab_titulo">MÊS | ANO</th>
-                          <th class="tab_titulo">MÊS | ANO</th>
-                          <th class="tab_titulo">MÊS | ANO</th>
-                          <th class="tab_titulo">MÊS | ANO</th> 
-                          <th class="tab_titulo">VIGÊNCIA</th>
-                        </tr>
-                        <tr>
-                          <td>Mensalidade bruta</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td> 
-                          <td>Não se aplica</td>
-                        </tr>
-                        <tr>
-                          <td>Bolsa de estudos</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>R$ 000,00</td>
-                          <td>1º semestre</td>
-                        </tr>
-                        <tr>
-                            <td>Bolsa de estudos</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>Integral</td>
-                        </tr>
-                        <tr>
-                            <td>Desconto por pontualidade</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td> 
-                            <td>Não se aplica</td>
-                        </tr>
-                        <tr>
-                            <td>Valor a pagar</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td>
-                            <td>R$ 000,00</td> 
-                            <td>Não se aplica</td>
-                        </tr>
-                      </table>
-                      <p class="font12">* Bolsa 1º semestre = bolsa concedida para as mensalidades escolares do 1º semestre. Pode ser concedida de forma deliberativa pela IES.</p>
-                    <br>
-                    <p class="bold line">De que se trata o contrato, local dos serviços e transferência?</p>
-                    <p>O contrato garante a prestação de serviços educacionais de nível superior pela IES ao ESTUDANTE, durante o semestre letivo, independentemente da data da matrícula, no Curso de graduação ambos especificados na Tabela acima. Por exemplo, o aluno pode se matricular em abril, para o 1º semestre, porém o contrato será válido por todo o semestre.<br><br>
-                    
-                    As aulas e demais atividades escolares seguem o projeto pedagógico, programas de disciplinas e currículos aprovados pela IES.<br><br>
-                    
-                    O contrato é válido para o semestre letivo que o ESTUDANTE fez a matrícula.</p>
-    
-                    <!--RESPONSABILIDADES-->
-                    <img src="img/responsabilidades.svg" alt="No primeiro quadro lê-se: Responsabilidades da IES. É de nossa responsabilidade exclusiva, conforme a legislação: orientação técnica aos serviços de ensino; orientação pedagógica-educacional; fixação da grade curricular e carga horária; determinação do calendário escolar; ensalamento de turmas;  definição do professor responsável; definição do horário de funcionamento; fixação das normas disciplinares; Ddtas em modalidades de verificações de aproveitamento; definição de material escolar e didático; contratação de docentes e demais profissionais; organização administrativo-financeira; demais providências que suas atividades didático-pedagógicas exijam ou venham a exigir. No segundo quadro lê-se: Serviços específicos. Serviços que não estão incluídos no contrato educacional e no valor do semestre e da mensalidade: Exame de segunda chamada; segunda via de documentos do curso e do estudante; solicitação de revisão de prova; matrícula em turma especial; disciplinas estudos dirigidos decorrentes de reprovação; certidões do estudante; declarações; atestados; históricos escolares do estudante; guias de transferência; diploma digital em papel especial; outros serviços complementares, destinados ao estudante." style="margin-left: 6%;">
-    
-                    <!--1.3 Normas Gerais-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.3 &nbsp;&nbsp; Normas Gerais</p>
-                            <p>A IES prestará os serviços educacionais de acordo com as Normas Gerais disponíveis no endereço eletrônico ou no canal de atendimento ao aluno da instituição de ensino.</p>
-                        </div>
-                    </div>
-    
-                    <!--1.4 Local da Prestação dos Serviços-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.4 &nbsp;&nbsp; Local da Prestação dos Serviços</p>
-                            <p>As aulas acontecerão em salas de aula, ambientes virtuais ou locais que a IES indicar, de acordo com a natureza do conteúdo e da técnica pedagógica adotada, nas seguintes modalidades:</p>
-                            <img src="img/locais.svg" alt="No primeiro quadro lê-se: Presencial. Você poderá realizar aulas práticas em endereço diverso do qual assiste aulas e realiza provas. No segundo quadro lê-se: A distância | EAD. Você poderá ter aulas Sammy presenciais e/ou a distância (remotas e/ou 100% on-line), nos termos da legislação federal aplicável.">
-                        </div>
-                    </div>
-    
-                    <!-- Aviso Corona-->
-                    <div class="terms">
-                        <img src="img/aviso-virus.svg" alt="Em razão da pandemia de Covid-19 e outras circunstâncias excepcionais que possam ocorrer, conforme autorizado por autoridades regulatórias e recomendado por autoridades sanitárias públicas e/ou pela IES, e seguindo diretrizes dos Poderes Públicos Federal, Estadual e Municipal, a IES, mesmo em cursos presenciais, se reserva no direito de ministrar, integral ou parcialmente durante o semestre/ano letivo, aulas/atividades na modalidade a distância (remotas e/ou 100% online) através do uso de plataformas próprias e/ou disponíveis no mercado, que substituirão as aulas/atividades presenciais do curso, mantendo-se o mesmo valor da semestralidade/mensalidade escolar prevista neste Contrato." style="margin-top: 2%; margin-bottom: 2%; width: 90%;">
-                    </div>
-    
-                    <!--1.5 Migração-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.5 &nbsp;&nbsp; Migração</p>
-                            <p>A IES poderá migrar o serviço educacional prestado ao ESTUDANTE de modalidade de ensino presencial para modalidade de ensino a distância, conforme legislação aplicável.</p>
-                        </div>
-                    </div>
-    
-                    <!--1.6 Transferência-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.6 &nbsp;&nbsp; Transferência</p>
-                            <p>O ESTUDANTE está ciente e concorda quanto à possibilidade da IES realizar a transferência de seu Curso para Instituição de Ensino diversa e integrante do mesmo grupo econômico da Anhanguera, condorme definido pela legislação aplicável. Havendo essa hipótese, caso aplicável ao ESTUDANTE, eventuais valores decorrentes de mensalidades escolares efetivamente pago à Anhanguera, bolsas e/ou descontos concedidos, serão mantidos e considerados válidos pela IES transferida. Quaisquer certificados e/ou diploma de graduação serão emitidos pela IES transferida.</p>
-                        </div>
-                    </div>
-    
-                    <!--Formas de Contratação-->
-                    <p class="bold line">Formas de contratação</p>
-                    <p>Pode acontecer de duas maneiras:</p>
-    
-                    <!--WEB-->
-                    <div class="terms">
-                        <div class="titles">
-                            <img src="img/web.svg" alt="ícone de um computador" style="width: 100%;">
-                            <img src="img/atenção.svg" alt="Atenção: se existirem débitos relativos ao pagamento de mensalidades escolares referentes ao(s) semestre(s) letivo(s) anterior(es), a IES poderá recusar a renovação da matrícula do estudante para o segundo mestre seguinte, incluindo se nova matrícula ou renovação de matrícula para qualquer instituição de ensino do mesmo grupo econômico da IES, nos termos da Lei nº 9.870/99. A IES poderá ainda condicionar a nova matrícula ou a sua renovação à negociação prévia do débito anterior." style="margin-left: 5%;">
-                        </div>
-                    </div>
-    
-                    <!--GRAVAÇÃO TELEFÔNICA-->
-                    <div class="terms">
-                        <div class="titles">
-                            <img src="img/telefone.svg" alt="Em todos os procedimentos realizados via telefone (call center), fica autorizada a gravação integral do atendimento, conforme o decreto n. 6.523, de 31 de julho de 2009, bem como sua utilização e divulgação do áudio para quaisquer finalidades legalmente permitidas." style="width: 100%;">
-                        </div>
-                    </div>
-    
-                    <!--1.1 Renovação de matrícula-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.1 &nbsp;&nbsp; Renovação de matrícula</p>
-                            <p>Para serviços de renovação de matrícula, transferência de modalidade de estudo, transferência de curso, transferência de aula, transferência de unidade e trancamento de matrícula, o ESTUDANTE poderá solicitá-los pessoalmente, via web (plataforma da IES) ou call center, ou por outro meio que a IES disponibilizar.</p>
-                        </div>
-                    </div>
-    
-                    <!--1.2 Renovação de bolsa-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.2 &nbsp;&nbsp; Renovação de bolsa</p>
-                            <p>A bolsa de estudos parcial ou integral concedida pela IES ao ESTUDANTE terá vigência a partir da data de sua concessão, sendo que a renovação da matrícula para o semestre subsequente não representará a manutenção automática da bolsa de estudos.</p>
-                        </div>
-                    </div>
-    
-                    <!--Informações do curso-->
-                    <p class="bold line">Informações do curso</p>
-                    <p>É importante conhecer sobre novas turmas, continuação de cursos e serviços do portal:</p>
-    
-                    <!--1.1 Turma presencial-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.1 &nbsp;&nbsp; Turma presencial</p>
-                            <p>A IES pode não iniciar o Curso, caso as matrículas não atinjam o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas. Nesta hipótese, o ESTUDANTE receberá o valor total pago pela inscrição no vestibular e pagamento da primeira mensalidade (matrícula).<br><br>
-    
-                            Cursos podem ser descontinuados, caso o número de rematrículas não atinja o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas em determinado período letivo e turno. Caso esta hipótese ocorra, na medida da conclusão das disciplinas comuns em curso diferente do pretendido, será facultado ao ESTUDANTE a migração para outro curso oferecido pela IES, aproveitando academicamente as disciplinas cursadas, conforme compatibilidade de grade curricular.</p>
-                        </div>
-                    </div>
-    
-                    <!--1.2 Curso a distância-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.2 &nbsp;&nbsp; Curso a distância</p>
-                            <p>Caso o curso escolhido na modalidade a distância pelo ESTUDANTE não atinja o número mínimo para formação de turma, este poderá iniciar seus estudos em turma de outro curso correlato, na modalidade à distância (semipresencial), sem prejuízo do programa pedagógico do seu Curso, estando ciente e de pleno de acordo que, após concluídas as disciplinas comuns em curso distinto do pretendido, ocorrerá a migração automática para o curso inicial escolhido, sendo mantida, se houver, eventuais bolsas e descontos.<br><br>
-    
-                            Se o número mínimo para formação de turma não for alcançado, o ESTUDANTE poderá optar entre: 
-                            <ul>
-                                <li class="font12">Migrar para outro curso oferecido pela IES, observando-se as condições deste novo curso e sendo mantida, se houver, eventuais bolsas ou descontos;</li>
-                                <li class="font12">Desistir do curso e ser ressarcido do valor pago pela inscrição no vestibular e eventuais valor(es) pago(s) da(s) mensalidade(s) escolar(es). </li>
-                            </ul>     
+                    <div class="right">
+                        <p class="bold line">Quadro resumo das partes<br></p>
+                        <p>Partes são os envolvidos em um contrato. As partes abaixo descritas firmam o <span class="bold">Contrato de Prestação de Serviços Educacionais</span>, com base no Estatuto e Regimento da <span class="bold">Instituição de Ensino Superior</span>, nas disposições do Código de Defesa do Consumidor, Lei 9.870/99 e nas Cláusulas a seguir:<br><br></p>
+                        <div class="parte">
+                            <p>
+                                <span class="bold">Anhanguera Educacional Participações S.A</span><br><br>
+                                CNPJ/ME: 04.310.392/0001-46<br>
+                                Endereço: Alameda Maria Tereza, 4266 - Bairro Dois Córregos - Valinhos/SP<br>
+                                Definida nesse contrato como: <span class="bold">Instituição de Ensino Superior</span> ou <span class="bold">IES</span>
                             </p>
                         </div>
-                    </div>
-    
-                    <!--1.2 Portal de serviços do aluno-->
-                    <div class="terms">
-                        <div class="titles">
-                            <p class="bold">1.3 &nbsp;&nbsp; Portal de serviços do aluno</p>
-    
-                            <p class="bold">Uso da senha</p>
-                            <p>As senhas de acesso a sistemas da IES são de uso pessoal e não podem ser compartilhadas. Caso aconteçam danos, por acesso de pessoas não autorizadas, a IES não poderá ser responsabilizada.<br><br></p>
-    
-                            <p class="bold">Direitos da Plataforma</p>
-                            <p>A IES possui todos os direitos intelectuais das plataformas utilizadas pelos alunos e suas respectivas funcionalidades, módulos, e que não está, de qualquer forma, impedida de disponibilizá-la, garantindo que não viola qualquer direito de propriedade intelectual, incluindo patente, direito de autor, segredo industrial ou quaisquer outros direitos de terceiros ou preceitos legais nacionais ou estrangeiros.<br><br>
-    
-                            O ESTUDANTE se compromete, portanto, a não causar, bem como a não permitir que ocorra a engenharia reversa, decomposição, desmontar, copiar, modificar, reproduzir, sublicenciar, publicar, divulgar, transmitir, emprestar, distribuir ou, de qualquer outra maneira, dispor de sua(s) plataforma(s), ou de qualquer de suas funcionalidades e/ou componentes, sob pena de suspensão da conta de acesso e descumprimento contratual, sem prejuízo de perdas e danos.<br><br></p> 
-    
-                            <p class="bold">Disponibilidade</p>
-                            <p>A IES se empenhará para manter a disponibilidade de sua(s) plataforma(s). No entanto, pode ocorrer, eventualmente, alguma indisponibilidade temporária decorrente de manutenção necessária ou mesmo gerada por motivo de força maior, como desastres naturais, falhas nos sistemas de comunicação e acesso à Internet, ataques cibernéticos invasivos, etc.<br><br>
-    
-                            Caso ocorra, a IES não medirá esforços para restabelecer a(s) plataforma(s) o mais breve possível, dentro das limitações técnicas de seus serviços e serviços de terceiros, dos quais depende para ficar online. O ESTUDANTE tem ciência, portanto, que não poderá pleitear indenização ou reparação de danos no caso da(s) plataforma(s) permanecer(em) fora do ar, independente da motivação.</p> 
+                        <br>
+                        <div class="parte">
+                            <p>
+                                <span class="bold">Estudante</span><br><br>
+                                Identificado e qualificado no quadro abaixo, ou seu representante legal (pai, mãe ou responsável quando menor de 18 anos).<br>
+                                Definido nesse contrato como: <span class="bold">Estudante</span> ou <span class="bold">Você</span>
+                            </p>
                         </div>
+                        <br>
+                        <p class="bold line">Preencha o formulário abaixo com seus dados:<br></p>
+                        
+                        <!--CURSO-->
+                        <p class="yellow">CURSO</p>
+        
+                        <div class="form_curso">
+                            <div class="input-curso">
+                                    <p class="font12" style="margin-bottom: 0.5em;">Curso</p>
+                                    <p class="info font12">#CURSO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Período</p>
+                                    <p class="info font12">#PERIODO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Registro Acadêmico</p>
+                                    <p class="info font12">#CODNOVO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Turma</p>
+                                    <p class="info font12">#TURMA#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Termo</p>
+                                    <p class="info font12">#TERMO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Regime</p>
+                                    <p class="info font12">#REGIME#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Forma de Ingresso</p>
+                                    <p class="info font12">#FORMAINGRESSO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Modalidade</p>
+                                    <p class="info font12">#MODALIDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Data de Ingresso</p>
+                                    <p class="info font12">#DATAINGR#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Vigência</p>
+                                    <p class="info font12">#SEMESTRAL#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Mantida</p>
+                                    <p class="info font12">#MANTIDA#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Endereço da mantida</p>
+                                    <p class="info font12">#ENDERECOMANTIDA#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Bairro</p>
+                                    <p class="info font12">#BAIRRO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Cidade</p>
+                                    <p class="info font12">#CIDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">UF</p>
+                                    <p class="info font12">#UF#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">CEP</p>
+                                    <p class="info font12">#CEP#</p>
+    
+    
+                                    <!--ESTUDANTE-->
+                                    <p class="yellow">ESTUDANTE</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Nome completo</p>
+                                    <p class="info font12">#NOME#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">RG</p>
+                                    <p class="info font12">#RG#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Órg. exp</p>
+                                    <p class="info font12">#EXPRG#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">UF</p>
+                                    <p class="info font12">#UFRG#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">CPF</p>
+                                    <p class="info font12">#CPF#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Sexo</p>
+                                    <p class="info font12">#SEXO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Telefone</p>
+                                    <p class="info font12">#FONE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Estado civil</p>
+                                    <p class="info font12">#ESTADO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Data de nasc.</p>
+                                    <p class="info font12">#DATAN#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Idade</p>
+                                    <p class="info font12">#IDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Naturalidade</p>
+                                    <p class="info font12">#NATURALIDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">UF</p>
+                                    <p class="info font12">#UF#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Nacionalidade</p>
+                                    <p class="info font12">#NACIONALIDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Endereço</p>
+                                    <p class="info font12">#ENDERECO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Bairro</p>
+                                    <p class="info font12">#BAIRRO#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Cidade</p>
+                                    <p class="info font12">#CIDADE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">UF</p>
+                                    <p class="info font12">#UE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">CEP</p>
+                                    <p class="info font12">#CEP#</p>
+    
+                                    <!--ESTUDANTE BENEFICIÁRIO | MENOR DE 18 ANOS-->
+                                    <p class="yellow">ESTUDANTE BENEFICIÁRIO | MENOR DE 18 ANOS</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Nome do pai</p>
+                                    <p class="info font12">#PAI#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Nome da mãe</p>
+                                    <p class="info font12">#MAE#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Nome do responsável</p>
+                                    <p class="info font12">#RESP#</p>
+    
+                                    <!--FINANCEIRO-->
+                                    <p class="yellow">FINANCEIRO</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Valor do semestre</p>
+                                    <p class="info font12">#VALOR#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">VALOR MENSAL</p>
+                                    <p class="info font12">#VALORPARCELA#</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Vencimento da parcela</p>
+                                    <p class="info font12">#5º DIA ÚTIL#</p>
+    
+                                    <p class="bold yellow font12" style="margin-top: 0;">
+                                        VALORES COM BOLSA INCENTIVO E EVENTUAIS DESCONTOS
+                                    </p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa Integral</spam></p>
+                                    <p class="info font12">@SEMEBOLSA</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa 1º semestre</spam></p>
+                                    <p class="info font12">@SemeBolsa1ºSem</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa Integral</spam></p>
+                                    <p class="info font12">@mensalbolsa</p>
+                                    <p class="font12" style="margin-bottom: 0.5em;">Valor por semestre <spam class="bold">| Bolsa 1º semestre</spam></p>
+                                    <p class="info font12">@mensalbolsa1ºsem</p>
+                            </div>
+                        </div>
+        
+                        <p class="semestre">SEMESTRE ATUAL: XX PERÍODO</p>
+        
+                        <!--TABELA-->
+                        <table>
+                            <tr>
+                              <th class="tab_titulo" style="text-align: left;">DESCRIÇÃO</th>
+                              <th class="tab_titulo">MÊS | ANO</th>
+                              <th class="tab_titulo">MÊS | ANO</th>
+                              <th class="tab_titulo">MÊS | ANO</th>
+                              <th class="tab_titulo">MÊS | ANO</th>
+                              <th class="tab_titulo">MÊS | ANO</th>
+                              <th class="tab_titulo">MÊS | ANO</th> 
+                              <th class="tab_titulo">VIGÊNCIA</th>
+                            </tr>
+                            <tr>
+                              <td>Mensalidade bruta</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td> 
+                              <td>Não se aplica</td>
+                            </tr>
+                            <tr>
+                              <td>Bolsa de estudos</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>R$ 000,00</td>
+                              <td>1º semestre</td>
+                            </tr>
+                            <tr>
+                                <td>Bolsa de estudos</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>Integral</td>
+                            </tr>
+                            <tr>
+                                <td>Desconto por pontualidade</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td> 
+                                <td>Não se aplica</td>
+                            </tr>
+                            <tr>
+                                <td>Valor a pagar</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td>
+                                <td>R$ 000,00</td> 
+                                <td>Não se aplica</td>
+                            </tr>
+                          </table>
+                          <p class="font12">* Bolsa 1º semestre = bolsa concedida para as mensalidades escolares do 1º semestre. Pode ser concedida de forma deliberativa pela IES.</p>
+                        <br>
+                        <p class="bold line">De que se trata o contrato, local dos serviços e transferência?</p>
+                        <p>O contrato garante a prestação de serviços educacionais de nível superior pela IES ao ESTUDANTE, durante o semestre letivo, independentemente da data da matrícula, no Curso de graduação ambos especificados na Tabela acima. Por exemplo, o aluno pode se matricular em abril, para o 1º semestre, porém o contrato será válido por todo o semestre.<br><br>
+                        
+                        As aulas e demais atividades escolares seguem o projeto pedagógico, programas de disciplinas e currículos aprovados pela IES.<br><br>
+                        
+                        O contrato é válido para o semestre letivo que o ESTUDANTE fez a matrícula.</p>
+        
+                        <!--RESPONSABILIDADES-->
+                        <img src="img/responsabilidades.svg" alt="No primeiro quadro lê-se: Responsabilidades da IES. É de nossa responsabilidade exclusiva, conforme a legislação: orientação técnica aos serviços de ensino; orientação pedagógica-educacional; fixação da grade curricular e carga horária; determinação do calendário escolar; ensalamento de turmas;  definição do professor responsável; definição do horário de funcionamento; fixação das normas disciplinares; Ddtas em modalidades de verificações de aproveitamento; definição de material escolar e didático; contratação de docentes e demais profissionais; organização administrativo-financeira; demais providências que suas atividades didático-pedagógicas exijam ou venham a exigir. No segundo quadro lê-se: Serviços específicos. Serviços que não estão incluídos no contrato educacional e no valor do semestre e da mensalidade: Exame de segunda chamada; segunda via de documentos do curso e do estudante; solicitação de revisão de prova; matrícula em turma especial; disciplinas estudos dirigidos decorrentes de reprovação; certidões do estudante; declarações; atestados; históricos escolares do estudante; guias de transferência; diploma digital em papel especial; outros serviços complementares, destinados ao estudante." style="margin-left: 6%;">
+        
+                        <!--1.3 Normas Gerais-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.3 &nbsp;&nbsp; Normas Gerais</p>
+                                <p>A IES prestará os serviços educacionais de acordo com as Normas Gerais disponíveis no endereço eletrônico ou no canal de atendimento ao aluno da instituição de ensino.</p>
+                            </div>
+                        </div>
+        
+                        <!--1.4 Local da Prestação dos Serviços-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.4 &nbsp;&nbsp; Local da Prestação dos Serviços</p>
+                                <p>As aulas acontecerão em salas de aula, ambientes virtuais ou locais que a IES indicar, de acordo com a natureza do conteúdo e da técnica pedagógica adotada, nas seguintes modalidades:</p>
+                                <img src="img/locais.svg" alt="No primeiro quadro lê-se: Presencial. Você poderá realizar aulas práticas em endereço diverso do qual assiste aulas e realiza provas. No segundo quadro lê-se: A distância | EAD. Você poderá ter aulas Sammy presenciais e/ou a distância (remotas e/ou 100% on-line), nos termos da legislação federal aplicável.">
+                            </div>
+                        </div>
+        
+                        <!-- Aviso Corona-->
+                        <div class="terms">
+                            <img src="img/aviso-virus.svg" alt="Em razão da pandemia de Covid-19 e outras circunstâncias excepcionais que possam ocorrer, conforme autorizado por autoridades regulatórias e recomendado por autoridades sanitárias públicas e/ou pela IES, e seguindo diretrizes dos Poderes Públicos Federal, Estadual e Municipal, a IES, mesmo em cursos presenciais, se reserva no direito de ministrar, integral ou parcialmente durante o semestre/ano letivo, aulas/atividades na modalidade a distância (remotas e/ou 100% online) através do uso de plataformas próprias e/ou disponíveis no mercado, que substituirão as aulas/atividades presenciais do curso, mantendo-se o mesmo valor da semestralidade/mensalidade escolar prevista neste Contrato." style="margin-top: 2%; margin-bottom: 2%; width: 90%;">
+                        </div>
+        
+                        <!--1.5 Migração-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.5 &nbsp;&nbsp; Migração</p>
+                                <p>A IES poderá migrar o serviço educacional prestado ao ESTUDANTE de modalidade de ensino presencial para modalidade de ensino a distância, conforme legislação aplicável.</p>
+                            </div>
+                        </div>
+        
+                        <!--1.6 Transferência-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.6 &nbsp;&nbsp; Transferência</p>
+                                <p>O ESTUDANTE está ciente e concorda quanto à possibilidade da IES realizar a transferência de seu Curso para Instituição de Ensino diversa e integrante do mesmo grupo econômico da Anhanguera, condorme definido pela legislação aplicável. Havendo essa hipótese, caso aplicável ao ESTUDANTE, eventuais valores decorrentes de mensalidades escolares efetivamente pago à Anhanguera, bolsas e/ou descontos concedidos, serão mantidos e considerados válidos pela IES transferida. Quaisquer certificados e/ou diploma de graduação serão emitidos pela IES transferida.</p>
+                            </div>
+                        </div>
+        
+                        <!--Formas de Contratação-->
+                        <p class="bold line">Formas de contratação</p>
+                        <p>Pode acontecer de duas maneiras:</p>
+        
+                        <!--WEB-->
+                        <div class="terms">
+                            <div class="titles">
+                                <img src="img/web.svg" alt="ícone de um computador" style="width: 100%;">
+                                <img src="img/atenção.svg" alt="Atenção: se existirem débitos relativos ao pagamento de mensalidades escolares referentes ao(s) semestre(s) letivo(s) anterior(es), a IES poderá recusar a renovação da matrícula do estudante para o segundo mestre seguinte, incluindo se nova matrícula ou renovação de matrícula para qualquer instituição de ensino do mesmo grupo econômico da IES, nos termos da Lei nº 9.870/99. A IES poderá ainda condicionar a nova matrícula ou a sua renovação à negociação prévia do débito anterior." style="margin-left: 5%;">
+                            </div>
+                        </div>
+        
+                        <!--GRAVAÇÃO TELEFÔNICA-->
+                        <div class="terms">
+                            <div class="titles">
+                                <img src="img/telefone.svg" alt="Em todos os procedimentos realizados via telefone (call center), fica autorizada a gravação integral do atendimento, conforme o decreto n. 6.523, de 31 de julho de 2009, bem como sua utilização e divulgação do áudio para quaisquer finalidades legalmente permitidas." style="width: 100%;">
+                            </div>
+                        </div>
+        
+                        <!--1.1 Renovação de matrícula-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.1 &nbsp;&nbsp; Renovação de matrícula</p>
+                                <p>Para serviços de renovação de matrícula, transferência de modalidade de estudo, transferência de curso, transferência de aula, transferência de unidade e trancamento de matrícula, o ESTUDANTE poderá solicitá-los pessoalmente, via web (plataforma da IES) ou call center, ou por outro meio que a IES disponibilizar.</p>
+                            </div>
+                        </div>
+        
+                        <!--1.2 Renovação de bolsa-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.2 &nbsp;&nbsp; Renovação de bolsa</p>
+                                <p>A bolsa de estudos parcial ou integral concedida pela IES ao ESTUDANTE terá vigência a partir da data de sua concessão, sendo que a renovação da matrícula para o semestre subsequente não representará a manutenção automática da bolsa de estudos.</p>
+                            </div>
+                        </div>
+        
+                        <!--Informações do curso-->
+                        <p class="bold line">Informações do curso</p>
+                        <p>É importante conhecer sobre novas turmas, continuação de cursos e serviços do portal:</p>
+        
+                        <!--1.1 Turma presencial-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.1 &nbsp;&nbsp; Turma presencial</p>
+                                <p>A IES pode não iniciar o Curso, caso as matrículas não atinjam o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas. Nesta hipótese, o ESTUDANTE receberá o valor total pago pela inscrição no vestibular e pagamento da primeira mensalidade (matrícula).<br><br>
+        
+                                Cursos podem ser descontinuados, caso o número de rematrículas não atinja o percentual mínimo equivalente a 60% (sessenta por cento) das vagas oferecidas em determinado período letivo e turno. Caso esta hipótese ocorra, na medida da conclusão das disciplinas comuns em curso diferente do pretendido, será facultado ao ESTUDANTE a migração para outro curso oferecido pela IES, aproveitando academicamente as disciplinas cursadas, conforme compatibilidade de grade curricular.</p>
+                            </div>
+                        </div>
+        
+                        <!--1.2 Curso a distância-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.2 &nbsp;&nbsp; Curso a distância</p>
+                                <p>Caso o curso escolhido na modalidade a distância pelo ESTUDANTE não atinja o número mínimo para formação de turma, este poderá iniciar seus estudos em turma de outro curso correlato, na modalidade à distância (semipresencial), sem prejuízo do programa pedagógico do seu Curso, estando ciente e de pleno de acordo que, após concluídas as disciplinas comuns em curso distinto do pretendido, ocorrerá a migração automática para o curso inicial escolhido, sendo mantida, se houver, eventuais bolsas e descontos.<br><br>
+        
+                                Se o número mínimo para formação de turma não for alcançado, o ESTUDANTE poderá optar entre: 
+                                <ul>
+                                    <li class="font12">Migrar para outro curso oferecido pela IES, observando-se as condições deste novo curso e sendo mantida, se houver, eventuais bolsas ou descontos;</li>
+                                    <li class="font12">Desistir do curso e ser ressarcido do valor pago pela inscrição no vestibular e eventuais valor(es) pago(s) da(s) mensalidade(s) escolar(es). </li>
+                                </ul>     
+                                </p>
+                            </div>
+                        </div>
+        
+                        <!--1.2 Portal de serviços do aluno-->
+                        <div class="terms">
+                            <div class="titles">
+                                <p class="bold">1.3 &nbsp;&nbsp; Portal de serviços do aluno</p>
+        
+                                <p class="bold">Uso da senha</p>
+                                <p>As senhas de acesso a sistemas da IES são de uso pessoal e não podem ser compartilhadas. Caso aconteçam danos, por acesso de pessoas não autorizadas, a IES não poderá ser responsabilizada.<br><br></p>
+        
+                                <p class="bold">Direitos da Plataforma</p>
+                                <p>A IES possui todos os direitos intelectuais das plataformas utilizadas pelos alunos e suas respectivas funcionalidades, módulos, e que não está, de qualquer forma, impedida de disponibilizá-la, garantindo que não viola qualquer direito de propriedade intelectual, incluindo patente, direito de autor, segredo industrial ou quaisquer outros direitos de terceiros ou preceitos legais nacionais ou estrangeiros.<br><br>
+        
+                                O ESTUDANTE se compromete, portanto, a não causar, bem como a não permitir que ocorra a engenharia reversa, decomposição, desmontar, copiar, modificar, reproduzir, sublicenciar, publicar, divulgar, transmitir, emprestar, distribuir ou, de qualquer outra maneira, dispor de sua(s) plataforma(s), ou de qualquer de suas funcionalidades e/ou componentes, sob pena de suspensão da conta de acesso e descumprimento contratual, sem prejuízo de perdas e danos.<br><br></p> 
+        
+                                <p class="bold">Disponibilidade</p>
+                                <p>A IES se empenhará para manter a disponibilidade de sua(s) plataforma(s). No entanto, pode ocorrer, eventualmente, alguma indisponibilidade temporária decorrente de manutenção necessária ou mesmo gerada por motivo de força maior, como desastres naturais, falhas nos sistemas de comunicação e acesso à Internet, ataques cibernéticos invasivos, etc.<br><br>
+        
+                                Caso ocorra, a IES não medirá esforços para restabelecer a(s) plataforma(s) o mais breve possível, dentro das limitações técnicas de seus serviços e serviços de terceiros, dos quais depende para ficar online. O ESTUDANTE tem ciência, portanto, que não poderá pleitear indenização ou reparação de danos no caso da(s) plataforma(s) permanecer(em) fora do ar, independente da motivação.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Temas Financeiros-->
+                <div>
+                    <div class="left">
+                        <p class="bold orange font48">2. <span class="font32 yellow orange" style="font-weight: 400;">Temas financeiros</span></p>
+                    </div>
+                    <div class="right">
+                        <!--2.1 VALOR E FORMA DE PAGAMENTO-->
+                        <div>
+                            <p class="bold line">2.1 Valor e Forma de Pagamento</p>
+                        <p>Para receber os serviços educacionais, o ESTUDANTE pagará o valor da mensalidade ou semestralidade descritos na tabela de pagamentos.<br><br>
+    
+                        Sobre o valor da mensalidade, a UNIVERSIDADE poderá conceder descontos determinados conforme política adotada.<br><br>
+                        
+                        As mensalidades escolares posteriores à matrícula deverão ser pagas pelo ESTUDANTE até a data descrita na Tabela deste Contrato, via rede bancária por meio de boleto ou cartão de crédito e/ou débito, diretamente no setor da UNIVERSIDADE específico para atendimento ao aluno e, também, no seu endereço eletrônico, devendo o ESTUDANTE providenciar sua obtenção e pagamento no prazo contratual.<br><br>
+                        
+                        O(s) valor(es) da(s) disciplina(s) de reprova e/ou que sejam acrescidas à grade curricular pelo (a) UNIVERSIDADE possui(em) o mesmo valor(es) da(s) disciplina(s) regular(es) do Curso, observada(s) a carga horária de cada disciplina. <br><br>    
+                        </p>
+                        <p class="bold" style="padding-left: 10%;">Reajuste</p>
+                        <p style="padding-left: 10%;">O valor dos serviços educacionais descritos neste Contrato (valor do semestre e o valor da mensalidade), podem sofrer reajustes e revisões anuais, conforme autorizado pela Lei 9.870 de 23.11.99.<br><br>
+    
+                        Na hipótese do ESTUDANTE cursar  um número menor de disciplinas no semestre letivo em relação à grade curricular regular do semestre, mensalidade escolar devida pelo ESTUDANTE será ajustada nos termos da Lei de Mensalidades Escolares (Lei 9.870/99), compreendendo(a) o número de disciplinas cursadas; (b) os custos fixos da UNIVERSIDADE e serviços que estarão disponibilizados em tempo integral ao ESTUDANTE, tais como laboratórios de informática, biblioteca, setores de atendimentos, considerando-se, para os fins previstos nesta cláusula, o percentual de 20% (vinte por cento) sobre o total da semestralidade correspondente à grade curricular regular, o qual será aplicado integralmente. <br><br>
+                            
+                        Em caso de aumento da carga tributária incidente sobre o serviço de ensino, a UNIVERSIDADE se reserva no direito de reajustar o valor da mensalidade escolar na mesma proporção.<br><br>
+                        </p>
+                        <p class="bold" style="padding-left: 10%;">Política de descontos e bolsas</p>
+                        <p style="padding-left: 10%;">O ESTUDANTE reconhece que eventuais descontos ou benefícios concedidos pela UNIVERSIDADE serão válidos para o semestre letivo vigente, e, quando aplicável, para os demais semestres, respeitando-se a condição de elegibilidade e periodicidade de cada desconto e/ou bolsa.<br><br>
+    
+                        Na hipótese de a UNIVERSIDADE ter concedido algum desconto ao ESTUDANTE ou condição mais benéfica no valor da semestralidade/mensalidade, em decorrência de alguma premissa/condição atingida, incluindo, mas não se limitando a descontos concedidos por convênios, parcerias, dentre outros e, por qualquer motivo, a referida premissa/condição deixar de existir, o desconto ou benefício ora concedido ao ESTUDANTE poderá, a exclusivo critério da UNIVERSIDADE, ser cancelado e o valor das prestações retornará ao valor base original, a partir do primeiro pagamento subsequente à inexistência da premissa/condição do desconto ou benefício.<br><br>
+                        
+                        A UNIVERSIDADE poderá conceder ao ESTUDANTE gratuidade(s) escolar(es) (Bolsa de Estudos), aplicado sobre o valor do semestre para alunos calouros durante o primeiro semestre do Curso, reservando-se a UNIVERSIDADE o direito a cancelar e/ou reduzir o percentual da bolsa de estudos para os semestres letivos subsequentes ao primeiro.<br><br>
+                        
+                        Eventual bolsa de estudos concedida no primeiro semestre não acumulará com as demais bolsas de estudos oferecidas pela UNIVERSIDADE.<br><br>
+                        
+                        O ESTUDANTE candidato a qualquer modalidade de bolsa de estudos e/ou financiamento estudantil deverá efetuar o pagamento das mensalidades escolares até a data de eventual concessão de bolsa de estudos e/ou financiamento pleiteado.<br><br>
+                        </p>
+                        <p class="bold" style="padding-left: 10%;">Adimplemento contratual</p>
+                        <p style="padding-left: 10%;">O não comparecimento às aulas e demais atividades escolares não desobriga o ESTUDANTE do pagamento da(s) mensalidade(s) escolar(es), tendo em vista os serviços educacionais colocados à disposição pela UNIVERSIDADE.</p>
+    
+                        <!--2.2 MORA-->
+                        <div>
+                            <p class="bold line">2.2 Mora</p>
+                            <p class="bold" style="padding-left: 10%;">Inadimplemento</p>
+                            <p style="padding-left: 10%;">Caso haja atraso no pagamento da mensalidade escolar, o ESTUDANTE ficará constituído em mora, nos termos do Artigo 397 do Código Civil, e o valor do débito original será acrescido dos seguintes encargos:<br><br></p>
+                            <ul style="padding-left: 15%;">
+                                <li class="font12">Multa moratório de 2% (dois por cento);</li>
+                                <li class="font12">Juros de mora de 1%(um por cento) ao mês calculados proporcionalmente ao dia (por cada dia);</li>
+                                <li class="font12">Correção monetária pelo IPCA/ibge;</li>
+                                <li class="font12">Honorários advocatícios fixados em 10% (dez por cento) para cobranças extrajudiciais e 20% (vinte por cento) para cobranças judiciais, sem prejuízo de protesto e/ou negativação do título e/ou cobrança judicial.</li>
+                            </ul>
+                            <p class="bold" style="padding-left: 10%;">Não renovação</p>
+                            <p style="padding-left: 10%;">Caso o ESTUDANTE permaneça inadimplente, a renovação deste Contrato para o semestre letivo subsequente estará condicionada à quitação integral da(s) mensalidade(s) escolar(es) inadimplida(s) com os acréscimos. <br><br></p>
+                        </div>
+    
+                    </div>
+                        
+                    </div>
+                </div>
+
+                <!--Vigência e extinção-->
+                <div>
+                    <div class="left">
+                        <p class="bold font48" style="color: #D23E26;">3. <span class="font32" style="font-weight: 400;">Vigência e extinção do contrato</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="bold line">O que significa a vigência do contrato?</p>
+                        <p style="margin-bottom: 3%;">Período em que os contratos firmados produzem direitos e obrigações para as partes contratantes.</p>
+
+                        <p class="bold line">Qual a vigência deste Contrato de Prestação de Serviços Educacionais?</p>
+                        <p style="margin-bottom: 3%;">Um semestre letivo e será prorrogado, automaticamente, por igual período até a conclusão do Curso pelo ESTUDANTE, observando-se as correções da mensalidade escolar admitidas pela legislação em vigor, desde que:
+                            <ul>
+                                <li class="font12">o Contrato não seja alterado pela UNIVERSIDADE;</li>
+                                <li class="font12">o ESTUDANTE efetue o pagamento da primeira mensalidade (matrícula) relativa ao semestre letivo subsequente e não existam mensalidades em atraso junto à UNIVERSIDADE.</li>
+                            </ul>
+                        </p>
+
+                        <p class="bold line">3.1 Rematrícula</p>
+                        <p style="margin-bottom: 3%;">O pagamento da primeira mensalidade para o semestre subsequente (rematrícula) representa o aceite expresso do ESTUDANTE para adesão ao Contrato vigente e seu interesse em manter o vínculo com a UNIVERSIDADE por mais um semestre letivo.</p>
+
+                        <p class="bold line">3.2 Extinção do contrato</p>
+                        <p>Quando o contrato poderá ser rescindido?
+                            <ul>
+                                <li class="font12">por desistência ou trancamento, devidamente formalizados pelo ESTUDANTE junto à UNIVERSIDADE;</li>
+                                <li class="font12">pela UNIVERSIDADE;</li>
+                                <li class="font12">por descumprimento contratual de quaisquer das Partes.</li>
+                            </ul>
+                        </p>
+
+                        <div style="padding-left: 10%;">
+                            <p>
+                                <span class="bold">Desistência<br><br></span>
+                                O ESTUDANTE poderá solicitar a desistência do Curso em qualquer época do semestre, junto à UNIVERSIDADE, e deve realizar o pagamento integral das mensalidades escolares até o mês da solicitação.<br><br>
+
+                                Na hipótese de desistência do Curso antes do início das aulas, possibilitando a convocação pela UNIVERSIDADE do próximo classificado no processo seletivo, será restituído ao ESTUDANTE 80% do valor pago na primeira mensalidade (matrícula).<br><br>
+                                <span class="bold">Não será restituído qualquer valor ao estudante, em caso de desistência após a data de início das atividades escolares, conforme calendário acadêmico.<br><br>
+                                </span>
+
+                                <span class="bold">Trancamento<br><br></span>
+
+                                Se trancar a matrícula, o ESTUDANTE deverá pagar as mensalidades escolares até o mês do referido trancamento e perderá eventual bolsa de estudos e/ou descontos concedidos pela UNIVERSIDADE.<br><br>
+
+                                Se a rematrícula na UNIVERSIDADE não for realizada no prazo de 02 (dois) anos, a contar do trancamento, o ESTUDANTE incidirá no pagamento de multa a favor da UNIVERSIDADE no valor correspondente a 10% (dez por cento) das mensalidades a vencer até o término do semestre objeto do trancamento, desconsiderando-se eventual desconto, de qualquer natureza, concedido pela UNIVERSIDADE ao ESTUDANTE ou gratuidade (bolsa) recebida pelo ESTUDANTE.<br><br>
+
+                                O ESTUDANTE na situação de aluno trancado, ao retornar as atividades acadêmicas, está sujeito às adaptações que se fizerem necessárias para o cumprimento da matriz curricular que estiver ativa quando do seu retorno ao curso.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--Sua imagem e dados pessoais-->
+                <div>
+                    <div class="left">
+                        <p class="bold font48" style="color: #9E9B95;">4. <span class="font32" style="font-weight: 400;">Sua imagem e dados pessoais</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="bold line">4.1 Sobre uso de fotos, vídeos e gravações no ambiente escolar<br><br></p>
+                        <p>
+                            <span class="bold">Proibição<br><br></span>
+                            Não é permitido ao ESTUDANTE tirar fotos, gravar, filmar, publicar e/ou compartilhar imagens de dentro da sala de aula e/ou das demais dependências da UNIVERSIDADE, de outros colegas, docentes, colaboradores ou quaisquer terceiros, sem autorização prévia da Direção (“Conteúdo Não Autorizado”), à exceção das situações já previamente avisadas e autorizadas em eventos educacionais ou sociais públicos.<br><br>
+
+                            <span class="bold">Compartilhamento<br><br></span>
+                            O compartilhamento público de Conteúdo Não Autorizado em qualquer meio, inclusive na Internet, Mídias Sociais, Celulares e Aplicativos Sociais, será avaliado pela UNIVERSIDADE para fins de aplicação de medida disciplinar para o ESTUDANTE.<br><br>
+                        </p>
+
+                        <p class="bold line">4.2 Autorização de veiculação de imagem<br><br></p>
+                        <p>
+                            <span class="bold">Autorização do uso de imagem<br><br></span>
+                            O ESTUDANTE ou seu responsável legal concede, expressa e gratuitamente, o direito de utilização de imagem e voz do ESTUDANTE, para fins de registro de atividades escolares e/ou de acervo histórico, em campanhas institucionais, materiais impressos, audiovisuais e virtuais, incluindo mídias sociais e endereços eletrônicos da UNIVERSIDADE ou de quaisquer empresas do mesmo grupo econômico da UNIVERSIDADE. Caso o ESTUDANTE não esteja de acordo com os usos aqui previstos, deverá manifestar sua discordância, por escrito, ao canal de atendimento ao ALUNO, a qualquer tempo.<br><br>
+
+                            <span class="bold">Direitos do ESTUDANTE<br><br></span>
+                            A UNIVERSIDADE declara que estão ressalvados os direitos, como a honra, reputação, boa fama, sendo que o uso da imagem, voz e som do ESTUDANTE serão feitos apenas nos limites acordados, sem exposição ao ridículo ou a situações constrangedoras por parte da UNIVERSIDADE, atendendo as leis em vigor no Brasil.<br><br>
+
+                            Se a imagem do ESTUDANTE for compartilhada em outros ambientes físicos ou digitais, a responsabilidade não será da UNIVERSIDADE.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Questões gerais-->
+                <div>
+                    <div class="left">
+                        <p class="bold font48" style="color: #58595B;">5. <span class="font32" style="font-weight: 400;">Questões gerais</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="bold line">5.1 Regimento geral, prática ética e boa fé</p>
+                        <p>
+                            <span class="bold">Ciência das regras<br><br></span>
+                            Ao firmar o Contrato, o ESTUDANTE se compromete em seguir o Estatuto; Regimento Geral; Regulamento de Estágio; demais normas e determinações da UNIVERSIDADE, inclusive o Projeto Pedagógico, que estão à disposição do ESTUDANTE para consulta junto à UNIVERSIDADE, bem como aos princípios éticos e melhores práticas de segurança que regem os comportamentos de toda a comunidade escolar, às obrigações constantes da legislação aplicável à área de Ensino.<br><br>
+
+                            <span class="bold">Postura ética<br><br></span>
+                            É dever do ESTUDANTE adotar uma postura ética e de boa-fé nas relações com outros alunos, professores, colaboradores, familiares, prezando sempre pela honestidade, solidariedade, alteridade, veracidade e transparência de suas ações a todo momento, independente se em ambientes físicos ou digitais.<br><br>
+
+                            <span class="bold">Propriedade Intelectual<br><br></span>
+                            O ESTUDANTE assume responsabilidade integral por violações de direito de autor, propriedade intelectual e direito de imagem cometidos na confecção de seus trabalhos, atividades e apresentações, evitando a prática de pirataria, plágio, infração de direito autoral ou de uso não autorizado de imagem de terceiro, inadequação ou ausência de citação de fonte e autoria nas referências e notas bibliográficas, conforme o padrão ABNT, que exige citação de nome de Autor (ou menção à autoria desconhecida), nome da fonte, edição, página e/ou endereço eletrônico quando houver (link), ano de publicação ou data e horário de acesso (se aplicável) e referência ao termo “uso educacional”.<br><br>
+                        </p>
+
+                        <p class="bold line">5.2 Disposições finais e foro</p>
+                        <p>
+                            <span class="bold">Assinaturas<br><br></span>
+                            Assinam em duas vias iguais, na presença das testemunhas:<br><br>
+                            Local
+                        </p>
+                        <p class="info">#LOCALDOCONTRATO</p>
+                        <p>Data</p>
+                        <p class="info">#DATA#</p>
                     </div>
                 </div>
             </section>
